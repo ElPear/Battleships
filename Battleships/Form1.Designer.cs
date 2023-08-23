@@ -74,15 +74,14 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(857, 450);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Controls.Add(button1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Battleships";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

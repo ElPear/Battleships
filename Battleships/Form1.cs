@@ -9,7 +9,7 @@ namespace Battleships
         public Form1()
         {
             InitializeComponent();
-            ClientSize = new Size(40 * 20 + 50, 40*10+40);
+            ClientSize = new Size(40 * 20 + 50, 40 * 10 + 40);
 
         }
         public partial class Tile : Button
@@ -56,7 +56,7 @@ namespace Battleships
                         Location = new Point(10 + tileSize * x, 10 + tileSize * y),
                         BackColor = Color.LightSkyBlue,
                         Occupied = false,
-                        Hit = false 
+                        Hit = false
 
 
 
@@ -125,7 +125,7 @@ namespace Battleships
                 switch (shape)
                 {
                     case "hLong":
-                        if (!arena[btnX - 1, btnY].Occupied && !arena[btnX, btnY].Occupied && !arena[btnX + 1, btnY].Occupied && !arena[btnX+2, btnY].Occupied)
+                        if (!arena[btnX - 1, btnY].Occupied && !arena[btnX, btnY].Occupied && !arena[btnX + 1, btnY].Occupied && !arena[btnX + 2, btnY].Occupied)
                         {
                             arena[btnX - 1, btnY].BackColor = color;
                             arena[btnX, btnY].BackColor = color;
