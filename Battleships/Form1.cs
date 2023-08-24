@@ -70,7 +70,7 @@ namespace Battleships
                         Name = $"EnemyTile{x}-{y}",
                         Width = tileSize,
                         Height = tileSize,
-                        Location = new Point(440 + tileSize * x, 10 + tileSize * y),
+                        Location = new Point(tileSize*arenaSize + 40 + tileSize * x, 10 + tileSize * y),
                         BackColor = Color.LightSkyBlue,
                         Occupied = false,
                         Hit = false
@@ -98,6 +98,7 @@ namespace Battleships
                 {
                     AutoPlace();
                 }
+                MessageBox.Show("TIme to play");
             }
         }
         private void preview(object sender, EventArgs e)
