@@ -65,12 +65,6 @@ namespace Battleships
                     playerArena[x, y].Click += new EventHandler(this.place);
                     playerArena[x, y].MouseEnter += new EventHandler(this.preview);
                     playerArena[x, y].MouseLeave += new EventHandler(this.clear);
-                }
-            }
-            for (int x = 0; x < arenaSize; x++)
-            {
-                for (int y = 0; y < arenaSize; y++)
-                {
                     enemyArena[x, y] = new Tile()
                     {
                         Name = $"EnemyTile{x}-{y}",
@@ -86,7 +80,6 @@ namespace Battleships
                     Controls.Add(enemyArena[x, y]);
                 }
             }
-
         }
         private void place(object sender, EventArgs e)
         {
